@@ -1,0 +1,22 @@
+
+
+.button {
+    background: #4d9e9b;
+    border: 0;
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+.secondary-button {
+    color: #4d9e9b;
+    background: #fff;
+}

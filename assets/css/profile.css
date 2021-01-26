@@ -1,0 +1,147 @@
+body {
+    background: #2E3740;
+    color: #435160;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        box-sizing: border-box;
+        max-width:100%
+    }
+}
+
+
+.content__left-side {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.camera {
+    background: #4d9e9b;
+    width: 640px;
+    height: 480px;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+
+
+.camera__action {
+    /*background: white;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.upload-file__form {
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    padding: 25px;
+}
+.start-video-wrap {
+    background: white;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+button {
+    background: #4d9e9b;
+    border: 0;
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+.photo__action {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.photo__action button:not(:first-of-type) {
+    margin-left: 15px;
+}
+
+
+.photo-montages {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 640px;
+    margin-bottom: 25px;
+}
+
+.photo-montages div:not(:first-of-type) {
+    margin-left: 10px;
+}
+
+.photo-montages img {
+    cursor: pointer;
+}
+
+.montage-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .camera {
+        width: 100%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+    .photo-montages {
+        max-width: 100%;
+    }
+    .start-video-wrap {
+        padding: 10px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .upload-file__form {
+        padding: 10px;
+    }
+}

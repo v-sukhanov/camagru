@@ -1,0 +1,24 @@
+
+.signup {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.signup__header, .signin__header {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.content__header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 75px;
+}
+
+.email_verify input {
+    width: initial;
+}
+.email_verify {
+    max-width: 350px;
+    font-size: 11px;
+}
